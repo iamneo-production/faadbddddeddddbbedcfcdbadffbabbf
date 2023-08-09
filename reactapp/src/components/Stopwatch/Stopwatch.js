@@ -57,4 +57,4 @@ function StopWatch() {
   );
 }
   
-export default StopWatch;
+export default Stopwatch;
