@@ -20,7 +20,7 @@ export default function ControlButtons(props)
             borderColor: "#b9bcbd",
             borderBottomColor: "grey",
             borderRightColor: "grey"
-        }} data-testid="reset">
+        }} data-testid="reset" disabled>
         Reset
         </button>
     </div>
