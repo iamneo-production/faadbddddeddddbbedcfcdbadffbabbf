@@ -1,0 +1,35 @@
+.Control-Buttons {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+  
+.btn-grp {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+  
+.btn {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 6vw;
+  height: 5vh;
+  border-radius: 5px;
+  margin: 0px 6px;
+  display: flex;
+  border: 5px solid;
+  border-bottom-color: black;
+  border-top-color:grey;
+  border-left-color: grey;
+  border-right-color:black;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.btn-two{
+    filter: blur(0);
+}
