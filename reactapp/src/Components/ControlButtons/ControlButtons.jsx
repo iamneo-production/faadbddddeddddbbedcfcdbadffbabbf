@@ -6,7 +6,7 @@ export default function ControlButtons(props)
   const StartButton = (
     <div className="btn-grp">
         <button className="btn btn-one btn-start"
-            onClick={props.handleStart} id="start">
+            onClick={props.handleStart} data-testid="start">
         Start
         </button>
         <button className="btn btn-two" style={{
@@ -20,18 +20,21 @@ export default function ControlButtons(props)
             borderColor: "#b9bcbd",
             borderBottomColor: "grey",
             borderRightColor: "grey"
-        }} id="reset">
+        }} data-testid="reset">
         Reset
         </button>
     </div>
   );
   const ActiveButtons = (
     <div className="btn-grp">
-        <div className="btn btn-one" 
-           onClick={props.handlePauseResume}>
-        {props.isPaused ? "Resume" : "Pause"}
+        <div >
+        {props.isPaused ? <button className="btn btn-one" onClick={props.handlePauseResume} data-testid="resume">
+        Resume
+      </button> : <button className="btn btn-one" onClick={props.handlePauseResume} data-testid="pause">
+        Pause
+      </button> }
       </div>
-      <button className="btn btn-two" onClick={props.handleReset} id="reset">
+      <button className="btn btn-two" onClick={props.handleReset} data-testid="reset">
         Reset
       </button>
       

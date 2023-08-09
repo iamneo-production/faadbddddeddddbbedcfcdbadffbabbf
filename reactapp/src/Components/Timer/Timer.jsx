@@ -3,7 +3,7 @@ import "./Timer.css";
   
 export default function Timer(props) {
   return (
-    <p className="timer" id="time">
+    <p className="timer" data-testid="time">
       <span className="digits">
       {("0" + Math.floor((props.time / 3600000) % 60)).slice(-2)}:
       </span>
