@@ -5,11 +5,11 @@ export default function ControlButtons(props)
 {
   const StartButton = (
     <div className="btn-grp">
-        <div className="btn btn-one btn-start"
-            onClick={props.handleStart}>
+        <button className="btn btn-one btn-start"
+            onClick={props.handleStart} id="start">
         Start
-        </div>
-        <div className="btn btn-two" style={{
+        </button>
+        <button className="btn btn-two" style={{
             shadowOpacity: 1,
             shadowColor: '#000',
             shadowOffset: { width: 10, height: 10 },
@@ -20,9 +20,9 @@ export default function ControlButtons(props)
             borderColor: "#b9bcbd",
             borderBottomColor: "grey",
             borderRightColor: "grey"
-        }}>
+        }} id="reset">
         Reset
-        </div>
+        </button>
     </div>
   );
   const ActiveButtons = (
@@ -31,9 +31,9 @@ export default function ControlButtons(props)
            onClick={props.handlePauseResume}>
         {props.isPaused ? "Resume" : "Pause"}
       </div>
-      <div className="btn btn-two" onClick={props.handleReset} >
+      <button className="btn btn-two" onClick={props.handleReset} id="reset">
         Reset
-      </div>
+      </button>
       
     </div>
   );
