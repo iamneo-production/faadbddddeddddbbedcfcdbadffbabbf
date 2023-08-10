@@ -5,13 +5,13 @@ export default function ControlButtons(props)
 {
   const StartButton = (
     <div className="btn-grp">
-        <div className="btn btn-one btn-start"
+        <button className="btn btn-one btn-start"
             onClick={props.handleStart} data-testid="start">
         Start
-        </div>
-        <div className="btn btn-two" disabled data-testid="reset">
+        </button>
+        <button  disabled data-testid="reset">
         Reset
-        </div>
+        </button>
     </div>
   );
   const ActiveButtons = (

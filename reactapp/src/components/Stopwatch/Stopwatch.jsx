@@ -3,10 +3,6 @@ import "./StopWatch.css";
 import Timer from "../Timer/Timer";
 import ControlButtons from "../ControlButtons/ControlButtons";
 
-function blurButton()
-{
-  document.activeElement.blur();
-}
 function Stopwatch() {
   const [isActive, setIsActive] = useState(false);
   const [isPaused, setIsPaused] = useState(true);
