@@ -17,9 +17,9 @@ export default function ControlButtons(props)
   const ActiveButtons = (
     <div className="btn-grp">
       
-        {props.isPaused ? <div className="btn btn-two" onClick={props.handleReset} data-testid="resume">
+        {props.isPaused ? <div className="btn btn-two" onClick={props.handlePauseResume} data-testid="resume">
         Resume
-      </div> : <div className="btn btn-two" onClick={props.handleReset} data-testid="pause">
+      </div> : <div className="btn btn-two" onClick={props.handlePauseResume} data-testid="pause">
         Pause
       </div>}
       

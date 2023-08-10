@@ -7,7 +7,7 @@ function blurButton()
 {
   document.activeElement.blur();
 }
-function StopWatch() {
+function Stopwatch() {
   const [isActive, setIsActive] = useState(false);
   const [isPaused, setIsPaused] = useState(true);
   const [time, setTime] = useState(0);
@@ -60,4 +60,4 @@ function StopWatch() {
   );
 }
   
-export default StopWatch;
+export default Stopwatch;
