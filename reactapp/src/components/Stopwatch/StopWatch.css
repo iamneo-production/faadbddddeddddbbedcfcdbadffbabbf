@@ -1,0 +1,24 @@
+.bdr{
+    height:70vh;
+  border-radius: 30px;
+  border: 5px solid #34d0eb;
+  background-color: #34d0eb;
+  padding-top:90px;
+}
+
+.stop-watch{
+    height: 65vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.head{
+    display:flex;
+    font-size: 60px;
+    padding-bottom:20px;
+}
+
