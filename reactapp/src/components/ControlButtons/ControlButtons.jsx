@@ -1,11 +1,11 @@
-import React , { useRef } from "react";
+import React from "react";
 import "./ControlButtons.css";
   
 export default function ControlButtons(props) 
 {
   const StartButton = (
     <div className="btn-grp">
-        <button className="btn btn-one btn-start"
+        <button
             onClick={props.handleStart} data-testid="start">
         Start
         </button>
@@ -17,15 +17,15 @@ export default function ControlButtons(props)
   const ActiveButtons = (
     <div className="btn-grp">
       
-        {props.isPaused ? <div className="btn btn-two" onClick={props.handlePauseResume} data-testid="resume">
+        {props.isPaused ? <button  onClick={props.handlePauseResume} data-testid="resume">
         Resume
-      </div> : <div className="btn btn-two" onClick={props.handlePauseResume} data-testid="pause">
+      </button> : <button  onClick={props.handlePauseResume} data-testid="pause">
         Pause
-      </div>}
+      </button>}
       
-      <div className="btn btn-two" onClick={props.handleReset} data-testid="reset">
+      <button  onClick={props.handleReset} data-testid="reset">
         Reset
-      </div>
+      </button>
       
     </div>
   );
