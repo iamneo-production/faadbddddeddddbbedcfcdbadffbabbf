@@ -9,7 +9,7 @@ export default function ControlButtons(props)
             onClick={props.handleStart} data-testid="start">
         Start
         </button>
-        <button  disabled data-testid="reset">
+        <button data-testid="reset" disabled>
         Reset
         </button>
     </div>
